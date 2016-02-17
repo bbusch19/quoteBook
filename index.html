@@ -16,7 +16,7 @@
 
         <input type="text" placeholder="Text" ng-model="text" />
         <input type="text" placeholder="Author" ng-model="author" />
-        <div class="card" ng-repeat="quote in quotes | filter: text | filter: author">
+        <div class="card" ng-repeat="quote in quotes">
           {{quote.text}}
           <br /><br />
           - {{quote.author}}

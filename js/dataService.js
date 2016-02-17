@@ -9,7 +9,6 @@ app.service('dataService', function() {
   this.addData = function(quoteObj) {
     if ('text' in quoteObj && 'author' in quoteObj) {
       quotes.push(quoteObj);
-      // updateStorage();
     }
   }
 
@@ -19,7 +18,6 @@ app.service('dataService', function() {
         arr.splice(i, 1);
       }
     }
-    // updateStorage();
   }
 
 
@@ -34,17 +32,5 @@ app.service('dataService', function() {
   ];
 
 
-
-  // function updateStorage() {
-  //   localStorage.setItem('quotes', JSON.stringify(quotes));
-  // }
-  //
-  // this.retrieveStorage = function() {
-  //   if (localStorage['quotes']) {
-  //     quotes = JSON.parse(localStorage['quotes']);
-  //   } else {
-  //     localStorage['quotes'] = JSON.stringify(quotes)
-  //   }
-  // }
 
 });

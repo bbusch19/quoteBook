@@ -1,9 +1,9 @@
 var app = angular.module('quoteBook');
 
 app.controller('mainCtrl', function($scope, dataService) {
-  // localStorage.clear();
-  // dataService.retrieveStorage();
+
   $scope.quotes = dataService.getData();
+
 
   $scope.addQuote = function() {
     var quote = buildQuote();
