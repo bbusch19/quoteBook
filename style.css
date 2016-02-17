@@ -1,0 +1,17 @@
+.main-wrapper {
+  text-align: center;
+  width: 100%;
+  background: lightgrey;
+}
+
+.card {
+  background: white;
+  width: 60%;
+  height: 100px;
+  margin: auto;
+  margin-top: 15px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: cursive;
+  border-radius: 5px;
+}
